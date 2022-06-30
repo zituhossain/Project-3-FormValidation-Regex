@@ -29,38 +29,51 @@
     <div class="container">
         <div class="row form">
             <div class="col-md-12">
-            <h1 class="text-center">Form Validation</h1>
+                <h1 class="text-center">Form Validation</h1>
 
-            <form>
-                <div class="form-group">
-                    <label for="name">User Name</label>
-                    <input type="text" class="form-control" id="name" placeholder=" Enter User Name">
-                    <small id="namevalid" class="form-text text-muted invalid-feedback">
-                        Your username must be 4-10 characters long and shouldn't start with a number
-                    </small>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="text" class="form-control" id="email" placeholder="Enter your Email">
-                    <small id="emailvalid" class="form-text text-muted invalid-feedback">
-                        Your email must be a valid email address
-                    </small>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Enter your Phone">
-                    <small id="phonevalid" class="form-text text-muted invalid-feedback">
-                        Your phone number must be 11 digits
-                    </small>
-                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="name">User Name</label>
+                        <input type="text" class="form-control" id="name" placeholder=" Enter User Name">
+                        <small id="namevalid" class="form-text text-muted invalid-feedback">
+                            Your username must be 4-10 characters long and shouldn't start with a number
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+                        <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                            Your email must be a valid email address
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter your Phone">
+                        <small id="phonevalid" class="form-text text-muted invalid-feedback">
+                            Your phone number must be 11 digits
+                        </small>
+                    </div>
 
-                <div class="form-group">
-                    <label for="address">Address</label>
-                    <textarea name="address" class="form-control" id="address" cols="20" rows="5"></textarea>
-                </div>
-                <buttton id="submit" class="btn btn-primary">Submit</buttton>
-            </form>
-        </div>
+
+                    <div class="form-group generatePass">
+                        <label for="password">Password</label>
+                        <input type="text" class="form-control" id="password" placeholder="Password">
+                      
+                      <button type="submit" class="btn btn-primary mb-2">Generate Password</button>
+                    </div>
+                      <small id="generatePass" class="form-text text-muted invalid-feedback">
+                        Your password must be 8-20 characters long,contain letters and numbers, and must not contain
+                        spaces
+                    </small>
+
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea name="address" class="form-control" id="address" cols="20" rows="5"></textarea>
+                    </div>
+                    <buttton id="submit" class="btn btn-primary">Submit</buttton>
+                </form>
+            </div>
         </div>
     </div>
 
