@@ -54,22 +54,33 @@
                         </small>
                     </div>
 
-
                     <div class="form-group generatePass">
+                        <div class="row">
+                        <div class="col-md-6">
                         <label for="password">Password</label>
                         <input type="text" class="form-control" id="password" placeholder="Password">
-                      
-                      <button type="submit" class="btn btn-primary mb-2">Generate Password</button>
-                    </div>
-                      <small id="generatePass" class="form-text text-muted invalid-feedback">
-                        Your password must be 8-20 characters long,contain letters and numbers, and must not contain
-                        spaces
-                    </small>
+                        <small id="passvalid" class="form-text text-muted invalid-feedback">
+                            Your password must be 10-20 characters long,contain letters,numbers and special character but not spaces
+                        </small>
+                        </div>
+                        <div class="col-md-6">
 
+                            <button id="generatepass"  class="btn btn-primary mb-2">Generate Password</button>
+                        </div>
+                    </div>
+                    </div>
+                      
+                    <div class="form-group">
+                        <label for="web">Website</label>
+                        <input type="text" class="form-control" id="web" placeholder="Enter website link">
+                        <small id="webvalid" class="form-text text-muted invalid-feedback">
+                            Your website link must be a valid url.
+                        </small>
+                    </div>
 
                     <div class="form-group">
                         <label for="address">Address</label>
-                        <textarea name="address" class="form-control" id="address" cols="20" rows="5"></textarea>
+                        <textarea name="address" class="form-control" id="address" cols="10" rows="3"></textarea>
                     </div>
                     <buttton id="submit" class="btn btn-primary">Submit</buttton>
                 </form>

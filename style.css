@@ -3,7 +3,7 @@
     margin: 0 auto;
     margin-top: 35px;
 }
-.form-group.generatePass {
+/* .form-group.generatePass {
     width: 100%;
 }
 .form-group.generatePass label {
@@ -19,4 +19,8 @@ button.btn.btn-primary.mb-2 {
     overflow: hidden;
     width: 45%;
     float: right;
+} */
+button#generatepass {
+    margin-top: 30px;
+    padding: 10px 70px;
 }
