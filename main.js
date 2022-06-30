@@ -113,9 +113,9 @@ websiteElm.addEventListener('blur', () => {
 // Submit the form
 submitElm.addEventListener('click', (e) => {
     e.preventDefault();
-     console.log(validUser, validEmail, validPhone);
+     console.log(validUser, validEmail, validPhone, validPass, validWeb);
     // Submit form
-    if(validUser && validEmail && validPhone) {
+    if(validUser && validEmail && validPhone && validPass && validWeb) {
         successElm.style.display = 'block';
         failureElm.style.display = 'none';
         successElm.classList.add('show');
